@@ -107,9 +107,9 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 }
 
 $(document).ready( function() {
-
+fetchJSON(fetchiterateJSON()=mJSON);
 	// This initially hides the photos' metadata information
-	$('.details').eq(0).hide();
+	//$('.details').eq(0).hide();
 
 });
 
