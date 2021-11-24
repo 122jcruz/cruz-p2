@@ -53,18 +53,17 @@ var date = document.getElementsByClass('date')[0].innerHTML= "Location: " + mIma
   mCurrentIndex += 1;
 }
 
-  function iterateJSON() {
-    for(x = 0){
-      var x = index;
-      x.mImags = GalleryImage;
-      document.getElementByClass('location') = mJson.images[x].imgLocation;
-      document.getElementByClass('description') = mJson.images[x].imgDescrption;
-      document.getElementByClass('date') = mJson.images[x].imgDate;
-      document.getElementByClass(' img/imgPath') = mJson.images[x].img/imgPath;
-      x< mJson;
-      x++;
-    }
+function iterateJSON(mJson)
+{
+  for( x = 0; x < mJson.images.length; x++ )
+  {
+    mImages[x] = new GalleryImage();
+    mImages[x].location = mJson.images[x].imgLocation;
+    mImages[x].description = mJson.images[x].description;
+    mImages[x].date = mJson.images[x].date;
+    mImages[x].img = mJson.images[x].imgPath;
   }
+}
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
@@ -107,7 +106,7 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 }
 
 $(document).ready( function() {
-fetchJSON(fetchiterateJSON()=mJSON);
+fetchJSON(iterateJSON()=mJSON);
 	// This initially hides the photos' metadata information
 	//$('.details').eq(0).hide();
 
