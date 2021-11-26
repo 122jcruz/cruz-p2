@@ -22,6 +22,8 @@ body {
 	position: relative;
 	width: 80%;
 	margin: 0 auto;
+	max-height: 100%;
+  max-width: 100%;
 }
 
 .moreIndicator {
@@ -37,6 +39,9 @@ body {
 .thumbnail {
 	position: relative;
 	box-shadow: 1px 3px 20px 0px;
+		margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
@@ -54,10 +59,17 @@ body {
 	height: 42px;
 	width: 42px;
 }
+#prevPhoto:hover{
+	opacity: 0.8;
 
+}
 #nextPhoto {
 	height: 42px;
 	width: 42px;
+}
+#nextPhoto:hover{
+	opacity: 0.8;
+
 }
 
 .details p {

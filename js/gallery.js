@@ -130,3 +130,37 @@ function GalleryImage() {
   this.date;
   this.img;
 }
+function onClick(){
+  document.getElementByClass("onClick").addEventListener("click", click);
+  if (document.getElementByClass("onClick").hasClass( "rot270" ) {
+    + ".rot90";
+  } else {
+    - ".rot90" + ".rot270"
+  }
+$( "img" ).click(function() {
+  $( ".moreIndicator" ).slideToggle( "slow" );
+});
+}
+$( "#photo" ).position({
+  my: "right center",
+  at: "right bottom",
+  of: "#nav"
+});
+function nextPhoto() {
+  nextPhoto.next = function(imgId) {
+       var img = document.getElementById(nextPhoto);
+       nextPhoto.i++;
+       if (nextPhoto.i == mImages.length )
+           nextPhoto.i = 0;
+           img.src = mImages[nextPhoto.i];
+       }
+}
+function prevPhoto() {
+  prevPhoto.prev = function(prevPhoto) {
+var img = document.getElementById(prevPhoto);
+prevPhoto.i--;
+if (prevPhoto.i <= 0)
+    prevPhoto.i = mImages.length -1;
+    img.src = mImages[prevPhoto.i];
+}
+}
