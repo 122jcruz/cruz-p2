@@ -33,7 +33,7 @@ function animate() {
 /************* DO NOT TOUCH CODE ABOVE THIS LINE ***************/
 
 function swapPhoto() {
-  
+
   if(mCurrentIndex >= mImages.length)
   {
     mCurrentIndex = 0;
@@ -129,4 +129,15 @@ function GalleryImage() {
   this.description;
   this.date;
   this.img;
+}
+function onClick(){
+  document.getElementByClass("onClick").addEventListener("click", click);
+
+function click() {
+  document.getElementByClass("onClick").hasClass( "rot270" ) = - "rot270" + "rot90":
+  document.getElementByClass("onClick").hasClass( "rot90" ) = - "rot90" + "rot270":
+}
+$( "img" ).click(function() {
+  $( ".moreIndicator" ).slideToggle( "slow" );
+});
 }
