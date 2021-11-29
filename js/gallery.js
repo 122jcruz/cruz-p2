@@ -142,26 +142,22 @@ function GalleryImage() {
   this.img;
 }
 
+function toggleDetails()
+{
+  if($(".moreIndicator").hasClass("rot90"))
+  {
+    $( ".moreIndicator" ).removeClass("rot90");
+    $(".moreIndicator").addClass("rot270");
+  }
+  else {
+    $( ".moreIndicator" ).removeClass("rot270");
+    $(".moreIndicator").addClass("rot90");
+  }
+  $( ".details" ).slideToggle( "slow", "linear" );
+}
+
 $( "#photo" ).position({
   my: "right center",
   at: "right bottom",
   of: "#nav"
 });
-function nextPhoto() {
-  nextPhoto.next = function(imgId) {
-       var img = document.getElementById(nextPhoto);
-       nextPhoto.i++;
-       if (nextPhoto.i == mImages.length )
-           nextPhoto.i = 0;
-           img.src = mImages[nextPhoto.i];
-       }
-}
-function prevPhoto() {
-  prevPhoto.prev = function(prevPhoto) {
-var img = document.getElementById(prevPhoto);
-prevPhoto.i--;
-if (prevPhoto.i <= 0)
-    prevPhoto.i = mImages.length -1;
-    img.src = mImages[prevPhoto.i];
-}
-}
