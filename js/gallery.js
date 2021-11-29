@@ -141,18 +141,7 @@ function GalleryImage() {
   this.date;
   this.img;
 }
-function onClick(){
-  document.getElementByClass("onClick").addEventListener("click", click);
-  if (document.getElementByClass("onClick").hasClass( "rot270" )
-  {
-    + ".rot90";
-  } else {
-    - ".rot90" + ".rot270"
-  }
-$( "img" ).click(function() {
-  $( ".moreIndicator" ).slideToggle( "slow" );
-});
-}
+
 $( "#photo" ).position({
   my: "right center",
   at: "right bottom",
