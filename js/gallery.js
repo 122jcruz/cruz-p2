@@ -143,7 +143,7 @@ function GalleryImage() {
 }
 function onClick(){
   document.getElementByClass("onClick").addEventListener("click", click);
-  if (document.getElementByClass("onClick").hasClass( "rot270" ) {
+  if (document.getElementByClass("onClick").hasClass( "rot270" ){
     + ".rot90";
   } else {
     - ".rot90" + ".rot270"
