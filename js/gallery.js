@@ -127,7 +127,7 @@ $(document).ready( function() {
   }
 if(mUrl == undefined)
 {
-  	mUrl = 'images.json';
+  	mUrl = 'images.json', 'extra.json';
 }
 
   fetchJSON();

@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imgPath": "img/extra/1.jpg",
+            "imgLocation": "Acropolis, Athens, Greece",
+            "description": "Photo by Constantinos Kollias on Unsplash",
+            "date": "10/20/2020"
+        },
+        {
+            "imgPath": "img/extra/2.jpg",
+            "imgLocation": "Palacio Bellas Artes, CDMX, Mexico",
+            "description": "Photo by Daniel Lloyd Blunk-Fernándezn on Unsplash",
+            "date": "09/26/2020"
+        },
+        {
+            "imgPath": "img/extra/3.jpg",
+            "imgLocation": "Colleseum, Rome, Italy",
+            "description": "Photo by Zheka Boychenko on Unsplash",
+            "date": "05/23/2020"
+        },
+        {
+            "imgPath": "img/extra/4.jpg",
+            "imgLocation": "Walt Disney World, Orlando, USA",
+            "description": "Photo by Jayme McColgan on Unsplash",
+            "date": "04/17/2018"
+        },
+        {
+            "imgPath": "img/extra/5.jpg",
+            "imgLocation": "Xochimilco, CDMX, Mexico",
+            "description": "Photo by Roberto Carlos Roman Don on Unsplash",
+            "date": "08/02/2019"
+        }
+  ]
+}
